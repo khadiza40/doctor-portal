@@ -9,6 +9,8 @@ import {
 import Home from './Pages/Home/Home/Home';
 
 import Appointment from './Pages/Appointment/Appointment/Appointment';
+import Login from './Pages/Login/Login/Login';
+import Register from './Pages/Login/Register/Register';
 
 
 function App() {
@@ -22,8 +24,14 @@ function App() {
           <Route path="/appointment">
             <Appointment />
           </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
+          </Route>
 
-          <Route path="/">
+          <Route exact path="/">
             <Home></Home>
           </Route>
 
